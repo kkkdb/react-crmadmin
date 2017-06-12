@@ -55,35 +55,35 @@ const navList = [{
             }]
         }],
         index: 0
-        },{
-            name: '营销触达',
-            icon: 'fa-yelp',
-            children: [{
-                title: '等级二',
-                sub_list: [{
-                    id: "jjj",
-                    name: '2-1'
-                },{
-                    id: "kkk",
-                    name: '2-2'
-                }]
-            }],
-            index: 1
-        },{
-            name: '数据洞察',
-            icon: 'fa-pie-chart',
-            children: [{
-                title: '等级三',
-                sub_list: [{
-                    id: "lll",
-                    name: '3-1'
-                },{
-                    id: "mmm",
-                    name: '3-2'
-                }]
-            }],
-            index: 2
-        }]
+    },{
+        name: '营销触达',
+        icon: 'fa-yelp',
+        children: [{
+            title: '等级二',
+            sub_list: [{
+                id: "jjj",
+                name: '2-1'
+            },{
+                id: "kkk",
+                name: '2-2'
+            }]
+        }],
+        index: 1
+    },{
+        name: '数据洞察',
+        icon: 'fa-pie-chart',
+        children: [{
+            title: '等级三',
+            sub_list: [{
+                id: "lll",
+                name: '3-1'
+            },{
+                id: "mmm",
+                name: '3-2'
+            }]
+        }],
+        index: 2
+    }]
 
 store.dispatch(setNavList(navList));
 

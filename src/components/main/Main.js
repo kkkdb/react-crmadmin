@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import logo from '../../logo.svg';
+import { connect } from 'react-redux'
+import { setHistory } from '../../redux/action'
 import '../../style/main.css';
 
-export default class Main extends Component {
+class Main extends Component {
+    componentDidMount(){
+        this.props.setHistory(this.props.history)
+    }
+
     render() {
         return (
             <div>
@@ -19,13 +25,22 @@ export default class Main extends Component {
                 <p>
                     Hello World
                 </p>
+                <p onClick={()=>{this.props.history.push("/about")}}>About</p>
             </div>
         )
     }
 }
 
+const mapStateToProps = (state) => ({
+    _history: state._history
+})
 
+const mapDispatchToProps = (dispatch) => ({
+    setHistory: (_history) => {
+        dispatch(setHistory(_history))
+    }
+})
 
-
+export default connect(mapStateToProps, mapDispatchToProps)(Main)
 
 

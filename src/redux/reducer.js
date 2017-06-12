@@ -1,7 +1,8 @@
 import {
     IS_LOADING,
     SET_NAV_LIST,
-    SELECT_SUB_MENU
+    SELECT_SUB_MENU,
+    SET_HISTORY
 } from './action';
 // import storejs from 'storejs';
 
@@ -29,6 +30,15 @@ export const subMenu = (state = [], action) => {
     switch(action.type){
         case SELECT_SUB_MENU:
             return action.navList[action.key].children;
+        default:
+            return state;
+    }
+}
+
+export const _history = (state = '', action) => {
+    switch(action.type){
+        case SET_HISTORY:
+            return action._history;
         default:
             return state;
     }
