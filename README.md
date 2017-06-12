@@ -9,7 +9,7 @@
 
 有两种解决方案：
   1.把菜单放到每个route页面里面，相当于作为一个组件引入，有点麻烦
-  2.把Router置为最顶层，引入antd的Layout，可以参考我的另一个react工程
+  2.把Router置为最顶层，引入antd的Layout，可以参考我的另一个react工程 antd-demo
 
 ## 项目运行
 
