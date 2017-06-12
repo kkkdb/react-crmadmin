@@ -14,7 +14,7 @@
 ## 项目运行
 
 ```
-git clone https://github.com/bailicangdu/vue2-elm.git  
+git clone https://github.com/kkkdb/react-crmadmin.git
 
 cd react-crmadmin
 
