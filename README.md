@@ -1,7 +1,7 @@
 # React 后台管理系统
 ## 概述
 
-项目是用create-react-app创建的，涉及到了react+react-router-dom+react-redux，利用redux实现了TopBar一级菜单和SideBar二级菜单的交互。
+项目是用create-react-app创建的，涉及到了react+react-router-dom+react-redux
 
 ## 遇到问题
 
